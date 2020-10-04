@@ -26,8 +26,6 @@ Data Stack size         : 512
 
 #include <delay.h>
 #include <math.h>
-
-
 #include <SENSOR_UVIS25.h>
 
 // I2C Bus functions
@@ -303,10 +301,9 @@ lcd_init(16);
 // Global enable interrupts
 #asm("sei")
 
-while (1)
-      {
-      // Place your code here          
- 	EXAMPLE_UVIS25();       
-                    
-      }
+	while (1)
+	{
+		// Place your code here          
+		EXAMPLE_UVIS25();                     
+      	}
 }
